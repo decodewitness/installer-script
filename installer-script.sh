@@ -66,7 +66,10 @@ echo
 # MOVE PHONEINFOGA TO /USR/BIN
 if [ -f "./phoneinfoga" ]
   then
-  mv ./phoneinfoga /usr/bin/phoneinfoga
+  sudo mv ./phoneinfoga /usr/bin/phoneinfoga
+  echo
+  echo "Installed it there myself. Anything for you kid."
+  echo
   echo "..."
   echo "-- done."
 fi
