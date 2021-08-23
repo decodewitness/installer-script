@@ -56,13 +56,20 @@ echo "-- done."
 echo
 # SETUP PHONEINFOGA
 echo
-echo "- SETTING UP PHONEINFOGA"
+echo "- FETCHING PHONEINFOGA USING CURL."
 echo "  -----"
 echo
 curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash
-echo
+echo ...
 echo "-- done."
 echo
+# MOVE PHONEINFOGA TO /USR/BIN
+if [ -f "./phoneinfoga" ]
+  then
+  mv ./phoneinfoga /usr/bin/phoneinfoga
+  echo "..."
+  echo "-- done."
+fi
 # SETUP FORTUNES ON BASH LOGIN
 echo
 echo "- WRITING FORTUNE TO ~/.BASHRC FOR STARTING FORTUNES ON TERMINAL LAUNCH."
