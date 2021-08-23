@@ -1,4 +1,5 @@
-install-script v.0.1-1.
+install-script v.0.1-1c.
+Installing Linux programs w/ this template script.
 
 ======
 
